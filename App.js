@@ -1,10 +1,19 @@
 import React from 'react';
-import { StyleSheet } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
+import Tomato from './src/components/Tomato';
+import Timer from './src/components/Timer';
 
 export default class App extends React.Component {
   render() {
     return (
-      <h1 style={styles.primaryText}>Funcionou</h1>
+      <View style={styles.container}>
+
+      <Text style={styles.primaryText}>Pomodoro</Text>
+
+      <Tomato />
+      <Timer />
+
+      </View>
     );
   }
 }
